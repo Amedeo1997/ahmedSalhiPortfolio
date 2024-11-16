@@ -62,8 +62,8 @@ body {
     background-position: center;
   }
   
-  .github { background-image: url('https://via.placeholder.com/40/ff8c42?text=G'); }
-  .linkedin { background-image: url('https://via.placeholder.com/40/ff8c42?text=L'); }
+  .github { background-image: url('./images/github.svg'); }
+  .linkedin { background-image: url('./images/linkedin-original.svg'); }
   .facebook { background-image: url('https://via.placeholder.com/40/ff8c42?text=F'); }
   .instagram { background-image: url('https://via.placeholder.com/40/ff8c42?text=I'); }
   
@@ -81,8 +81,15 @@ body {
     width: 100%;
     padding: 20px 0;
     background-color: transparent;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
     z-index: 100;
-  }
+}
+
+header.scrolled {
+    background-color: transparent; /* Colore di sfondo scuro dopo lo scroll */
+    opacity: 0; /* Invisibile quando scrollato */
+}
+
   
   header nav {
     text-align: center;
@@ -103,12 +110,25 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('https://via.placeholder.com/1500x1000') center center no-repeat;
-    background-size: cover;
+    position: relative; /* Aggiunto per posizionare il contenuto sopra il video */
+    overflow: hidden; /* Per evitare che il video esca dalla sezione */
+  }
+  
+  .hero-video {
+    position: absolute; /* Posiziona il video in modo che stia dietro al contenuto */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fa in modo che il video copra tutta la sezione */
+    transform: translate(-50%, -50%); /* Centra il video */
+    z-index: -1; /* Il video rimane sotto il contenuto */
   }
   
   .hero-content {
     text-align: center;
+    z-index: 1; /* Il contenuto sta sopra al video */
+    color: white;
   }
   
   .hero h1 {
@@ -120,7 +140,6 @@ body {
     font-size: 20px;
     color: #fff;
   }
-  
   /* About Me Section */
   .about {
     display: flex;
