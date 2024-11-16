@@ -4,6 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #121212; /* Nero scuro */
     color: #ffffff; /* Bianco */
+    font-size: 16px;
   }
   
   a {
@@ -303,3 +304,78 @@ body {
     color: #ff8c42;
   }
   
+  @media (max-width: 768px) {
+    /* About Section */
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image {
+      margin-bottom: 20px;
+    }
+  
+    .about-text {
+      padding: 0;
+    }
+  
+    /* Skills Section */
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 colonne sui tablet e telefoni */
+      gap: 10px;
+    }
+  
+    .skill img {
+      width: 40px; /* Icone più piccole */
+      height: 40px;
+    }
+  
+    /* Projects Section */
+    .projects-grid {
+      grid-template-columns: 1fr; /* 1 colonna per i progetti */
+    }
+  
+    .project {
+      padding: 15px; /* Riduce il padding */
+    }
+  
+    /* Contact Section */
+    .contact input,
+    .contact textarea {
+      padding: 8px; /* Input più piccoli */
+    }
+  
+    .contact button {
+      padding: 10px 15px; /* Ridimensionamento bottone */
+    }
+  
+    /* Header */
+    header nav a {
+      font-size: 14px; /* Link più piccoli nel menu */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Riduzioni ulteriori per schermi molto piccoli */
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .btn {
+      padding: 8px 15px;
+    }
+  
+    /* Skills Section */
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 colonne per schermi piccoli */
+    }
+  
+    /* Footer */
+    footer p {
+      font-size: 14px;
+    }
+  }
