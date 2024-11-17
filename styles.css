@@ -49,6 +49,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   z-index: 999;
+  margin-left: 20px;
 }
 
 .social-icons {
@@ -83,6 +84,22 @@ a:hover {
 }
 
 /* Header */
+
+.logo {
+  text-align: left;
+  margin-left: 20px;
+}
+
+strong {
+  color: #ff8c42;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-family: "Bad Script", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
 header {
   position: fixed;
   top: 0;
@@ -100,6 +117,7 @@ header.scrolled {
 
 header nav {
   text-align: right;
+  margin-right: 20px;
 }
 
 header nav a {
@@ -329,7 +347,7 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #121212;
-  border: #ff8c42 2px solid;
+  border-top: #ff8c42 2px solid;
 }
 
 footer p {
@@ -409,5 +427,28 @@ footer p {
   /* Footer */
   footer p {
     font-size: 14px;
+  }
+
+  /* Social Media Sidebar */
+  .social-sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+
+ .filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filter-btn {
+    margin: 5px 5px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* 1 column for projects */
+  }
+
+  .project-links .btn {
+    padding: 8px 15px; /* Resize button */
   }
 }
