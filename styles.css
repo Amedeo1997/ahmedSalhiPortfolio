@@ -166,6 +166,9 @@ header nav a:hover {
   color: #fff;
 }
 
+.hero a:hover {
+  color: #ffffff;
+}
 /* About Me Section */
 .about {
   display: flex;
@@ -272,6 +275,11 @@ header nav a:hover {
   border-radius: 10px;
   padding: 20px;
   transition: transform 0.3s;
+}
+
+.project:hover {
+  border: 2px solid #ff8c42;
+  transform: translateY(-5px);
 }
 
 .project img {
