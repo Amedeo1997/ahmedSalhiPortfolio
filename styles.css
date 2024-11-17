@@ -9,7 +9,7 @@ body {
   
   a {
     text-decoration: none;
-    color: #ff8c42; /* Arancione */
+    color: #ffffff; /* Arancione */
     transition: color 0.3s;
   }
   
@@ -62,16 +62,16 @@ body {
     background-position: center;
   }
   
-  .github { background-image: url('./images/github.svg'); }
+  .github { background-image: url('./images/github-octocat.svg'); }
   .linkedin { background-image: url('./images/linkedin-original.svg'); }
-  .facebook { background-image: url('https://via.placeholder.com/40/ff8c42?text=F'); }
-  .instagram { background-image: url('https://via.placeholder.com/40/ff8c42?text=I'); }
+  .facebook { background-image: url('./images/facebook.svg'); }
+  .instagram { background-image: url('./images/instagram.svg'); }
   
   .vertical-line {
-    width: 5px;
-    height: 60px; /* Linea più piccola sotto le icone */
+    width: 2px;
+    height: 50px; /* Linea più piccola sotto le icone */
     background-color: #ff8c42;
-    margin-top: 20px; /* Distanza tra icone e linea */
+    margin-top: 0px; /* Distanza tra icone e linea */
   }
   
   /* Header */
@@ -92,7 +92,7 @@ header.scrolled {
 
   
   header nav {
-    text-align: center;
+    text-align: right;
   }
   
   header nav a {
@@ -145,6 +145,7 @@ header.scrolled {
     display: flex;
     padding: 50px 0;
     justify-content: space-between;
+    border-bottom : 2px solid #ff8c42;
   }
   
   .about-content {
@@ -176,6 +177,7 @@ header.scrolled {
   .skills {
     padding: 50px 0;
     text-align: center;
+    border-bottom: 2px solid #ff8c42;
   }
   
   .skills-grid {
@@ -211,6 +213,7 @@ header.scrolled {
   .projects {
     padding: 50px 0;
     text-align: center;
+    border-bottom : 2px solid #ff8c42;
   }
   
   .filters {
@@ -318,6 +321,7 @@ header.scrolled {
     text-align: center;
     padding: 20px;
     background-color: #121212;
+    border: #ff8c42 2px solid;
   }
   
   footer p {
